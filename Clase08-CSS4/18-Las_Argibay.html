@@ -1,0 +1,92 @@
+Etiqueta: style
+        * {
+            box-sizing: border-box;  /* https://midu.dev/que-es-y-para-que-sirve-box-sizing-border-box/ */
+            font-family: "Lucida Sans", sans-serif;
+        }
+
+        .col25 {
+            float: left;
+            padding: 15px;
+            width: 25%;
+        }
+
+        .col50 {
+            float: left;
+            padding: 15px;
+            width: 50%;
+        }
+
+
+        .header {
+            background-color: #9933cc;
+            color: #ffffff;
+            padding: 15px;
+        }
+
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu li {
+            padding: 8px;
+            margin-bottom: 7px;
+            background-color: #33b5e5;
+            color: #ffffff;
+            }
+
+        .menu li:hover {
+            color: #0099cc;
+            background-color: white;
+        }
+
+        .aside {
+            background-color: #6533e5;
+            padding: 15px;
+            color: #ffffff;
+            text-align: center;
+            font-size: 12px;
+
+        }
+
+        .footer {
+            background-color: #0099cc;
+            color: #ffffff;
+            text-align: center;
+            font-size: 12px;
+            padding: 15px;
+        }
+
+
+        @media only screen and (max-width: 920px) {
+            .col25 { width: 100%; }
+            .col50 { width: 100%; }
+        }
+
+<!-- Sitio Web de ejemplo -->
+
+Etiqueta: div class="header"
+Etiqueta: h1 Texto: Las Argibay
+
+Etiqueta: div
+Etiqueta: div class="col25 menu"
+Etiqueta: ul
+Etiqueta: li Texto: Ensaladas
+Etiqueta: li Texto: Pastas
+Etiqueta: li Texto: Vinos
+Etiqueta: li Texto: Postres
+
+Etiqueta: div class="col50" style="color: #ffffff;"
+Etiqueta: h1 Texto: Visitanos
+Etiqueta: p Texto: Las Argibay, el restaurante de pueblo que abre dos veces por semana y es de los mejores de la Provincia de Buenos Aires
+
+Etiqueta: div class="col25 "
+Etiqueta: div class="aside"
+Etiqueta: h2 Texto: ¿Cuándo?
+Etiqueta: p Texto: Sábados y domingos, mediodia y noche.
+Etiqueta: h2 Texto: ¿Dónde?
+Etiqueta: p Texto: A 150 km. del centro de CABA.
+
+Etiqueta: div class="footer"
+Etiqueta: p Texto: Mendoza 678 en Villa Lía, San Antonio de Areco.

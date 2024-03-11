@@ -1,0 +1,75 @@
+Titulo: Dimensiones en modelo de cajas
+Etiqueta: style Texto: 
+        .contenedor {
+            width: 400px;
+            height: 200px;
+            border: 2px solid blue;
+        }
+
+        .contenido {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            border: 2px solid red;
+        }
+
+        .spanauto {
+            display: inline-block;
+            width: auto;
+            height: auto;
+            border: 2px solid green;
+        }
+
+Etiqueta: h1 Texto: Dimensiones en modelo de cajas
+Etiqueta: p Texto: Proporcionamos tamaños específicos a los diferentes elementos de un documento HTML asignando valores a las propiedades <b>width</b> (ancho) y <b>height</b> (alto).
+Etiqueta: p Texto: Por ejemplo, a los div y a los span:
+
+Etiqueta: div class="contenedor"
+Etiqueta: p Texto: Div 400px x 200px
+Etiqueta: span class="contenido" Texto: Span 1 100px x 100px
+Etiqueta: span class="contenido" Texto: Span 2 100px x 100px
+Etiqueta: span class="contenido" Texto: Span 3 100px x 100px
+
+Etiqueta: p Texto: En el caso de utilizar el valor <b>auto</b> en las propiedades anteriores (valor por defecto), el navegador se encarga de calcular el ancho o alto necesario, dependiendo del contenido del elemento. El tamaño automático dado a un elemento depende del tipo de elemento que se trate (en bloque o en línea).
+
+Etiqueta: div class="contenedor"
+Etiqueta: p Texto: Div 400px x 200px
+Etiqueta: span class="spanauto" Texto: El tamaño de este span se adapta al tamaño de su contenido y contenedor, ya que tiene sus dimensiones fijadas como <b>auto</b>, que es la opción por defecto.
+
+Etiqueta: h1 Texto: Desbordamiento
+Etiqueta: p Texto: Si en lugar de utilizar la opción auto, o simplemente no indicamos valores para ancho y alto, el tamaño de la caja suele acomodarse al contenido sin problemas. Pero cuando asignamos valores a estos atributos, forzamos al elemento a tener un aspecto concreto, obteniendo resultados inesperados si su contenido es más grande que el tamaño que hemos definido.
+
+Etiqueta: div class="contenido"
+Etiqueta: p Texto: Este div tiene tamaño fijado en 100px x 100px, pero su contenido ocupa un area mayor, y se desborda.
+
+Etiqueta: p Texto: Podemos modificar este comportamiento con las propiedades de CSS <b>overflow</b>, <b>overflow-x</b> o <b>overflow-y</b>. Estas propiedades adminten valores de <b>visible</b>, <b>hidden</b>, <b>scroll</b> y <b>auto</b>:
+
+Etiqueta: div
+Etiqueta: span class="contenido" style="overflow:hidden"
+Etiqueta: p Texto: <b>overflow:hidden</b> Este div tiene tamaño fijado en 100px x 100px, pero su contenido ocupa un area mayor, y se desborda.
+
+Etiqueta: span class="contenido" style="overflow-x:hidden"
+Etiqueta: p Texto: <b>overflow-x:hidden</b> Este div tiene tamaño fijado en 100px x 100px, pero su contenido ocupa un area mayor, y se desborda.
+
+Etiqueta: span class="contenido" style="overflow-y:hidden"
+Etiqueta: p Texto: <b>overflow-y:hidden</b> Este div tiene tamaño fijado en 100px x 100px, pero su contenido ocupa un area mayor, y se desborda.
+
+Etiqueta: div>
+Etiqueta: span class="contenido" style="overflow:hidden"
+Etiqueta: p Texto: <b>overflow:hidden</b> Este div tiene tamaño fijado en 100px x 100px, pero su contenido ocupa un area mayor, y se desborda.
+
+Etiqueta: span class="contenido" style="overflow:scroll">
+Etiqueta: p Texto: <b>overflow:scroll</b> Este div tiene tamaño fijado en 100px x 100px, pero su contenido ocupa un area mayor, y se desborda.
+
+Etiqueta: span class="contenido" style="overflow:auto"
+Etiqueta: p Texto: <b>overflow:auto</b> Este div tiene tamaño fijado en 100px x 100px, pero su contenido ocupa un area mayor, y se desborda.
+
+Etiqueta: div
+Etiqueta: span class="contenido" style="overflow-x:scroll; overflow-y:none">
+Etiqueta: p Texto: <b>overflow-x:scroll; overflow-y:none</b> Este div tiene tamaño fijado en 100px x 100px, pero su contenido ocupa un area mayor, y se desborda.
+
+Etiqueta: span class="contenido" style="overflow-y:scroll"
+Etiqueta: p Texto: <b>overflow-y:scroll</b> Este div tiene tamaño fijado en 100px x 100px, pero su contenido ocupa un area mayor, y se desborda.
+
+Etiqueta: span class="contenido"
+Etiqueta: p Texto: <b>Sin nada...</b> Este div tiene tamaño fijado en 100px x 100px, pero su contenido ocupa un area mayor, y se desborda.

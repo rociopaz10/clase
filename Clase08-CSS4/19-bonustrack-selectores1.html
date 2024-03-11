@@ -1,0 +1,42 @@
+Titulo: Ejemplo de selectores descendientess 
+Etiqueta: style
+
+        li a {
+            color:brown;
+            background-color: bisque;
+            font-size: 20px;
+        }
+
+
+        #sector mark {
+            background-color: rgb(250, 120, 14);
+        }
+
+    
+Etiqueta: h1 Texto: Ejemplo de selectores descendientes
+
+Etiqueta: p Texto: Las etiquetas <b>LI</b> son descendientes de la etiqueta <b>UL</b>. La etiqueta <b>A</b> es descendiente de las etiquetas <b>LI</b> (descendiente de un hijo) y <b>UL</b> (descendiente de un nieto).
+
+Etiqueta: br
+
+Si piensas en esto usando el ejemplo de un árbol genealógico, el hijo de ese elemento sería el padre, el hijo de ese elemento, y el nieto del nieto.
+
+Etiqueta: p Texto: Entonces, ¿cómo dirigirías elementos específicos en una página web utilizando estos selectores de descendientes? En primer lugar, se deben definir los selectores de descendientes utilizando dos (o más) selectores de tipo separados por espacios:
+    
+Etiqueta: pre Texto: li a {
+        color:brown;
+        background-color: bisque;
+        font-size: 20px;
+    }
+
+Etiqueta: ul
+Etiqueta: li Etiqueta: a href="#" Texto: Primer Enlace
+Etiqueta: li Etiqueta: a href="#" Texto: Segundo Enlace
+Etiqueta: li Etiqueta: a href="#" Texto: Tercer Enlace                
+    
+Etiqueta: p Texto: Y este es un enlace que está fuera de la lista: Etiqueta: a href="#" Texto: Cuarto Enlace
+
+Etiqueta: div id="sector"
+Etiqueta: p Texto: Aqui tenemos un parrafo dentro de un DIV con un ID, y los textos con etiqueta  MARK <mark> aparecen resaltados con un tono naranja </mark> en lugar el amarillo estandar.
+
+Etiqueta: p Texto: Aqui, fuera del DIV, la etiqueta  MARK <mark> tiene el comportamiento habitual </mark>.
