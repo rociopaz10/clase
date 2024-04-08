@@ -1,16 +1,28 @@
-Titulo: Selectores avanzados
-Etiqueta: style Texto: 
-        p > b {
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores avanzados</title>
+</head> <style>
+     p > b {
             color:blue;
             }
-.
-Etiqueta: h3 Texto: Selector de hijos directos
+</style>
+<body> <h3>
+    Selector de hijos directos
+</h3>
+<p>El <b>signo mayor que</b> cuando queremos seleccionar a aquellos elementos que sean <b>hijos directos del contenedor padre</b> descartando nietos y sucesivos.</p>
+<div> 
+    <p>Este <b>boldface</b> está fuera del párrafo, y se muestra con el formato por defecto.
+    </p>
+</div> <br>
+<p><i><b>Este boldface está dentro de un i que está dentro de un p. </b></i> Al no ser b hijo directo del parrafo, el estilo no se aplica.
+</p>
 
-Etiqueta: p Texto: El <b>signo mayor que</b> cuando queremos seleccionar a aquellos elementos que sean <b>hijos directos del contenedor padre</b> descartando nietos y sucesivos.
+    
+</body>
+</html>
 
-Etiqueta: div
-Etiqueta: p Este <b>boldface</b> está fuera del párrafo, y se muestra con el formato por defecto.
 
-Etiqueta: br
-
-Etiqueta: p Texto: <i><b>Este boldface está dentro de un i que está dentro de un p. </b></i> Al no ser b hijo directo del parrafo, el estilo no se aplica.
+       

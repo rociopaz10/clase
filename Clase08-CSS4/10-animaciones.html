@@ -1,23 +1,30 @@
-Titulo: Animaciones
-Etiqueta: style Texto: 
-        div {
-            width: 100px;
-            height: 100px;
-            background-color: blue;
-            animation-name: cambiarColor;
-            animation-duration: 5s;
-            animation-delay: 1s;
-            /*Forma abreviada: animation: cambiarColor 2s 1s; */
-        }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animacion</title>
+</head> <style>div {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    animation-name: cambiarColor;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    /*Forma abreviada: animation: cambiarColor 2s 1s; */
+}
 
-        @keyframes cambiarColor {
-            from {
-                background-color: red;
-            }
+@keyframes cambiarColor {
+    from {
+        background-color: red;
+    }
 
-            to {
-                background-color: yellow;
-            }
-        }
-
-Etiqueta: div Texto: Div con animación
+    to {
+        background-color: yellow;
+    }
+}</style>
+<body> <div>Div con animación
+</div>
+    
+</body>
+</html>
