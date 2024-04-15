@@ -1,0 +1,73 @@
+Flex 5 - Alineación sobre el eje secundario
+
+Etiqueta: style
+        code {
+            background-color: yellow;
+            font-weight: bold;
+        }
+        /*containerh: Es el elemento padre que tendrá en su interior cada uno de los ítems flexibles. */
+        .flex-containerh {
+            display:flex;   /* Esta propiedad define al div como contenedor flex*/
+            flex-direction: row;
+            flex-wrap: wrap; /*No olvidar! (permite el "desbordamiento") */
+            background-color: yellowgreen;
+            height: 200px;  /*Le damos espacio al contenedor para que el contenido fluya en su interior */
+        }
+
+        /*Cada uno de los hijos flexibles que tendrá el contenedor horizontal en su interior. */
+        .flex-containerh > div {  /*Utilizamos selectores avanzados en lugar de clases */
+            color: white;
+            background-color: green;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+        }
+
+Etiqueta: h3 Texto: Flexbox | Alineación sobre el eje secundario
+
+Etiqueta: p Texto: Otra propiedad importante de este apartado es <code>align-items</code>, que se encarga de alinear los ítems en el eje secundario del contenedor. Hay que tener cuidado de no confundirla con <code>align-content</code>, puesto que el primero actúa sobre cada una de las líneas de un contenedor multilínea (no tiene efecto sobre contenedores de una sola línea), mientras que <code>align-items</code> lo hace sobre la línea actual.
+       
+Etiqueta: h4 Texto: align-items  
+    
+Etiqueta: p Texto: Los valores que puede tomar son los siguientes:
+    
+Etiqueta: p Texto: <b>align-items: flex-start</b>: Agrupa los items al principio de eje secundario.
+Etiqueta: div class="flex-containerh" style="align-items:flex-start;"
+Etiqueta: div style="font-size: 60px;" Texto: Item1
+Etiqueta: div Texto: Item2
+Etiqueta: div Texto: Item3
+Cierre div 
+Etiqueta: br
+
+Etiqueta: p Texto: <b>align-items:flex-end</b>: Agrupa los items al final de eje secundario.
+Etiqueta: div class="flex-containerh"  style="align-items:flex-end;"
+Etiqueta: div Texto: Item1
+Etiqueta: div Texto: Item2
+Etiqueta: div Texto: Item3
+Cierre div 
+Etiqueta: br
+
+Etiqueta: p Texto: <b>align-items: center</b>: Agrupa los items al centro del eje secundario.
+Etiqueta: div class="flex-containerh" style="align-items: center;"
+Etiqueta: div style="font-size: 60px;" Texto: Item1
+Etiqueta: div Texto: Item2
+Etiqueta: div style="font-size: 6px;" Texto: Item3
+Cierre div 
+Etiqueta: br
+
+ 
+Etiqueta: p><b>align-items: strech</b>: Alinea los items estirándolos de modo que cubran desde el inicio hasta el final del contenedor.
+Etiqueta: div class="flex-containerh" style="align-items: strech;"
+Etiqueta: div Texto: Item1
+Etiqueta: div Texto: Item2<br>ejemplo
+Etiqueta: div Texto: Item3
+Cierre div 
+Etiqueta: br  
+    
+Etiqueta: p Texto: <b>align-items: baseline</b>: Alinea los items en el contenedor según la base del contenido de los ítems del contenedor.
+Etiqueta: div class="flex-containerh" style="align-items: baseline;"
+Etiqueta: div style="font-size: 60px;" Texto: Item1
+Etiqueta: div Texto: Item2
+Etiqueta: div style="font-size: 6px;" Texto: Item3
+Cierre div 
+Etiqueta: br

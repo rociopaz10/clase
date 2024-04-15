@@ -1,0 +1,72 @@
+Flex - Filas y columnas
+
+Etiqueta: style
+        .flex-containerh {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            background-color: yellowgreen;
+            justify-content:space-between
+        }
+
+
+        .flex-containerh>div {
+            color: white;
+            background-color: green;
+            margin: 10px;
+            padding: 20px;
+            font-size: 20px;
+            border: 8px double black
+        }
+
+        .flex-containerv {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            background-color: yellow;
+            margin: 10px;
+            padding: 20px;            
+        }
+
+
+        .flex-containerv>div {
+            color: white;
+            background-color: yellowgreen;
+            margin: 10px;
+            padding: 20px;
+            font-size: 20px;
+            border: 4px solid black
+        }
+
+Etiqueta: div class="flex-containerv"
+Etiqueta: div class="flex-containerh" style="justify-content:space-between" 
+Etiqueta: div Texto: Item1
+Etiqueta: div style="flex-grow:1" Texto: Item2
+Etiqueta: div Texto: Item3
+Cierre div 
+
+Etiqueta: div class="flex-containerh"
+Etiqueta: div style="flex-grow:1" Texto: Item1
+Etiqueta: div style="flex-grow:1" Texto: Item2
+Etiqueta: div style="flex-grow:1" Texto: Item3
+Etiqueta: div style="flex-grow:1" Texto: Item4
+Etiqueta: div style="flex-grow:1" Texto: Item5
+Etiqueta: div style="flex-grow:1" Texto: Item6
+Etiqueta: div style="flex-grow:1" Texto: Item7
+Etiqueta: div style="flex-grow:1" Texto: Item8
+Cierre div 
+
+Etiqueta: div class="flex-containerh"
+Etiqueta: div class="flex-containerv" style="flex-grow:1"
+Etiqueta: div Texto: Item1
+Etiqueta: div style="flex-grow:1" Texto: Item2
+Cierre div 
+
+Etiqueta: div class="flex-containerv"
+Etiqueta: div Texto: Item1
+Etiqueta: div Texto: Item2
+Etiqueta: div Texto: Item3
+Etiqueta: div Texto: Item4                
+Cierre div 
+Cierre div 
+Cierre div 
