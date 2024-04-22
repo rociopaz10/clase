@@ -1,0 +1,49 @@
+layouts
+
+    Etiqueta: h1 Texto: Diferentes layouts para dispositivos
+    Etiqueta: h2 Texto: Ejemplo 1: dos columnas en container. 
+    Etiqueta: div class="container"
+        Etiqueta: div class="row"
+        Etiqueta: p>col-sm-6: ¿Cómo se lee esto?: Decimos que "desde small (576px)" dividime en 2 columnas de 6 y 6
+        Etiqueta: div class="col-sm-6 bg-success"
+        Etiqueta: p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, sit temporibus dolores corrupti odit eligendi voluptatem explicabo soluta assumenda perspiciatis modi maiores quos tempore tempora totam facilis? Rerum, nesciunt animi.
+            cierre div
+            Etiqueta: div class="col-sm-6 bg-warning"
+            Etiqueta: p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, sit temporibus dolores corrupti odit eligendi voluptatem explicabo soluta assumenda perspiciatis modi maiores quos tempore tempora totam facilis? Rerum, nesciunt animi.
+            cierre div
+        cierre div
+    cierre div
+    Etiqueta: br
+    Etiqueta: h2 Texto: Ejemplo 2: dos columnas en container-fluid. 
+    Etiqueta: br
+    Etiqueta: div class="container-fluid"
+        Etiqueta: div class="row"
+            Etiqueta: div class="col-sm-6 bg-success"
+            Etiqueta: p Texto: FONDO VERDE
+            cierre div
+            Etiqueta: div class="col-sm-6 bg-warning"
+            Etiqueta: p Texto: FONDO AMARILLO
+            cierre div
+        cierre div
+    cierre div
+    Etiqueta: br
+    Etiqueta: h2 Texto: Ejemplo 3: dos columnas en container-fluid. 
+    Etiqueta: p Texto: Las columnas se adaptan al ancho del viewport en tamaños <b>sm</b> y <b>lg</b>
+    Etiqueta: div class="container-fluid"
+    Etiqueta: p Texto:  Este ejemplo demuestra las siguientes divisiones: Etiqueta: br
+            - Una división de 6 a 6 (50 %) en dispositivos extra pequeños (hasta 576 px) Etiqueta: br
+            - Una división de 8 a 4 (67 % y 33 %) en dispositivos sm (small, desde 576 px en adelante) Etiqueta: br
+            - Una división de 10 a 2 (84 % y 16 %) en dipositivos lg (large, desde 992 px en adelante)
+        
+    Etiqueta: div class="row"
+        Etiqueta: div class="col-6 col-sm-8 col-lg-10 bg-primary"
+        Etiqueta: p Texto: col-6 col-sm-8 col-lg-10
+            cierre div
+            Etiqueta: div class="col-6 col-sm-4 col-lg-2 bg-warning"
+            Etiqueta: p Texto: col-6 col-sm-4 col-lg-2
+            cierre div
+        cierre div
+    cierre div
+
+    Etiqueta: br 
+    Etiqueta: br

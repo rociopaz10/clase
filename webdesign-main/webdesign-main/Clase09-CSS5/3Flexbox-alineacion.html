@@ -1,0 +1,75 @@
+Flex 3 - Propiedades de alineación
+
+Etiqueta: style
+        /*containerh: Es el elemento padre que tendrá en su interior cada uno de los ítems flexibles. */
+        .flex-containerh {
+            display:inline-flex;   /* Esta propiedad define al div como contenedor flex*/
+            flex-direction: row;
+            background-color: yellowgreen;
+        }
+
+        /*Cada uno de los hijos flexibles que tendrá el contenedor horizontal en su interior. */
+        .flex-containerh > div {  /*Utilizamos selectores avanzados en lugar de clases */
+            color: white;
+            background-color: green;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+        }
+.
+Etiqueta: h3 Texto: Flexbox | Propiedades de alineación
+
+Etiqueta: p Texto: Ya tenemos un control básico del contenedor de estos ítems flexibles, necesitamos conocer las propiedades existentes dentro de flexbox para disponer los ítems dependiendo de nuestro objetivo. Veamos la primera de ellas:
+       
+Etiqueta: h4 Texto: justify-content
+    
+Etiqueta: p Texto: Se utiliza para alinear los ítems del eje principal (por defecto, el horizontal) mediante una disposición concreta.
+    
+    
+Etiqueta: p Texto: <b>justify-content:flex-start</b>: Agrupa los items al principio de eje principal (opción por defecto).
+Etiqueta: div class="flex-containerh" style="justify-content:flex-start;"
+Etiqueta: div Texto: Item1
+Etiqueta: div Texto: Item2
+Etiqueta: div Texto: Item3
+Cierre div 
+Etiqueta: br
+
+Etiqueta: p Texto: <b>justify-content:flex-end</b>: Agrupa los items al final de eje principal.
+Etiqueta: div class="flex-containerh"  style="justify-content:flex-end;"
+Etiqueta: div Texto: Ifdgsdfgsdfg
+Etiqueta: div Texto: Item2
+Etiqueta: div Texto: Item3
+Cierre div 
+Etiqueta: br
+
+Etiqueta: p Texto: <b>justify-content: center</b>: Agrupa los items al centro del eje principal.
+Etiqueta: div class="flex-containerh" style="justify-content: center;"
+Etiqueta: div Texto: Item1
+Etiqueta: div Texto: Item2
+Etiqueta: div Texto: Item3
+Cierre div 
+Etiqueta: br
+
+Etiqueta: p Texto: <b>justify-content: space-between</b>: Distribuye los items con el máximo espacio entre ellos para separarlos.
+Etiqueta: div class="flex-containerh" style="justify-content: space-between;"
+Etiqueta: div Texto: Item1
+Etiqueta: div Texto: Item2
+Etiqueta: div Texto: Item3
+Cierre div 
+Etiqueta: br   
+
+Etiqueta: p Texto: <b>justify-content: space-around</b>: Distribuye los items dejando el mismo espacio alrededor (izquierda / derecha).
+Etiqueta: div class="flex-containerh" style="justify-content: space-around;"
+Etiqueta: div Texto: Item1
+Etiqueta: div Texto: Item2
+Etiqueta: div Texto: Item3
+Cierre div 
+Etiqueta: br  
+
+Etiqueta: p Texto: <b>justify-content: space-evenly</b>: Distribuye los items dejando el mismo espacio (solapado) a izquierda y derecha.
+Etiqueta: div class="flex-containerh" style="justify-content: space-evenly;"
+Etiqueta: div Texto: Item1
+Etiqueta: div Texto: Item2
+Etiqueta: div Texto: Item3
+Cierre div 
+Etiqueta: br     

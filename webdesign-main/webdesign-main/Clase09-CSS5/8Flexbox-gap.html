@@ -1,0 +1,98 @@
+Flex 8 - Huecos (gaps)
+
+Etiqueta: style
+        code {
+            background-color: yellow;
+            font-weight: bold;
+        }
+        /*containerh: Es el elemento padre que tendrá en su interior cada uno de los ítems flexibles. */
+        .flex-containerh {
+            display: inline-flex;   /* Esta propiedad define al div como contenedor flex*/
+            flex-direction: row;
+            column-gap:40px;
+            background-color: yellowgreen;
+        }
+
+        /*Cada uno de los hijos flexibles que tendrá el contenedor horizontal en su interior. */
+        .flex-containerh > div {  /*Utilizamos selectores avanzados en lugar de clases */
+            color: white;
+            background-color: green;
+
+            padding: 20px;
+            font-size: 30px;
+        }
+
+        /*containerv: Es el elemento padre que tendrá en su interior cada uno de los ítems flexibles. */
+        .flex-containerv {
+            display: inline-flex;   /* Esta propiedad define al div como contenedor flex*/
+            flex-direction: column;
+            row-gap: 40px;
+            background-color: orangered;
+        }
+
+        /*Cada uno de los hijos flexibles que tendrá el contenedor vertical en su interior. */
+        .flex-containerv > div {  /*Utilizamos selectores avanzados en lugar de clases */
+            color: white;
+            background-color: orange;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+        }
+
+        /*Ejemplo multicolumnas */
+        .flex-container {
+            display: inline-flex;   /* Esta propiedad define al div como contenedor flex*/
+            flex-wrap: wrap;
+            row-gap: 20px;
+            column-gap: 60px;
+            background-color: lightblue;
+
+        }
+        .flex-container > div {  /*Utilizamos selectores avanzados en lugar de clases */
+            color: white;
+            background-color: blue;
+            margin: 10px;
+            padding: 20px;
+            font-size: 16px;
+        }
+
+Etiqueta: h3 Texto: Flexbox | Huecos (gaps)
+
+Etiqueta: p Texto: Las propiedades <code>row-gap</code> y <code>column-gap</code> permiten establecer el tamaño de un «hueco» entre ítems hijos directamente desde el elemento padre (contenedor), y sin necesidad de estar utilizando padding o margin en los elementos hijos.
+
+Etiqueta: p Texto: Ten en cuenta que sólo una de las dos propiedades tendrá efecto, dependiendo de si la propiedad <code>flex-direction</code> se establece en <code>column</code> o en <code>row.</code>.
+
+Etiqueta: h4 Texto: row-gap
+Etiqueta: div class="flex-containerh"
+Etiqueta: div Texto: Item1 column-gap:40px;
+Etiqueta: div Texto: Item2 column-gap:40px;
+Etiqueta: div Texto: Item3 column-gap:40px;
+Cierre div 
+Etiqueta: br
+Etiqueta: br
+
+Etiqueta: h4 Texto: column-gap
+Etiqueta: div class="flex-containerv"
+Etiqueta: div Texto: Item1 row-gap: 40px
+Etiqueta: div Texto: Item2 row-gap: 40px
+Etiqueta: div Texto: Item3 row-gap: 40px
+Cierre div 
+Etiqueta: br
+Etiqueta: br
+
+Etiqueta: p Texto: Por último, es posible usar ambas propiedades si tenemos la propiedad <code>flex-wrap</code> definida como <code>wrap</code>, permitiendo el uso de "multicolumnas":
+
+Etiqueta: h4 Texto: column-gap + row-gap + flex-wrap: wrap
+Etiqueta: div class="flex-container"
+Etiqueta: div Texto: Item1 <br>row-gap: 20px;<br> column-gap: 60px;<br>
+Etiqueta: div Texto: Item2 <br>row-gap: 20px;<br> column-gap: 60px;<br>
+Etiqueta: div Texto: Item3 <br>row-gap: 20px;<br> column-gap: 60px;<br>
+Etiqueta: div Texto: Item4 <br>row-gap: 20px;<br> column-gap: 60px;<br>
+Etiqueta: div Texto: Item5 <br>row-gap: 20px;<br> column-gap: 60px;<br>
+Etiqueta: div Texto: Item6 <br>row-gap: 20px;<br> column-gap: 60px;<br>
+Etiqueta: div Texto: Item7 <br>row-gap: 20px;<br> column-gap: 60px;<br>
+Etiqueta: div Texto: Item8 <br>row-gap: 20px;<br> column-gap: 60px;<br>
+Etiqueta: div Texto: Item9 <br>row-gap: 20px;<br> column-gap: 60px;<br>
+Cierre div 
+Etiqueta: br
+Etiqueta: br

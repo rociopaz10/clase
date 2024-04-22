@@ -1,0 +1,80 @@
+Menú flex animado
+
+Etiqueta: style
+        .contenedor {
+            width: 100%;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(blue, lightblue);
+        }
+
+        /* Estilo de la lista */
+        ul {
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+        }
+
+        /* Estilo de los elementos li */
+        ul li {
+            list-style: none;
+            margin: 0 15px;
+            transition: 0.4s;
+        }
+
+        /* Estilo de los links dentro de la lista */
+        ul li a {
+            display: block;
+            text-decoration: none;
+            position: relative;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: lightgrey;
+            font-size: 12px;
+            padding: 6px;
+            transition: 0.4s;
+
+        }
+
+        /* Al pasar el mouse sobre la LISTA */
+        ul:hover li a {
+            transform: scale(1.2);
+            opacity: 0.7;
+            filter: blur(1px);
+        }
+
+        /* Al pasar el mouse sobre un LINK dentro de la lista */
+        ul li a:hover { 
+            transform: scale(1.7);  /* Zoom */
+            opacity: 1;
+            filter: blur(0px);
+        }
+
+        /* Al ENTRAR con el mouse sobre a link dentro de la lista */
+        ul li a:before { 
+            content: "";
+            position: absolute; /*Respecto de la caja del link*/
+            top: 0px;
+            left: 0px;
+            background: black;
+            width: 100%;        /*Respecto de la caja del link*/
+            height: 100%;       /*Respecto de la caja del link*/
+            transition: 0.4s;
+            transform-origin: right;
+            transform: scaleX(1.1);  /* Zoom */
+            z-index: -1;       /* Por detrás del texto del link*/
+        }
+
+
+Etiqueta: div class="contenedor">
+        <!-- Elementos del menu -->
+    Etiqueta: ul
+        Etiqueta: li Etiqueta: a href="#" Texto: INICIO
+        Etiqueta: li Etiqueta: a href="#" Texto: OBJETIVOS
+        Etiqueta: li Etiqueta: a href="#" Texto: PRODUCTOS
+        Etiqueta: li Etiqueta: a href="#" Texto: PORTFOLIO
+        Etiqueta: li Etiqueta: a href="#" Texto: CLIENTES
+        Etiqueta: li Etiqueta: a href="#" Texto: CONTACTO
+    
+Cierre div 

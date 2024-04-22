@@ -1,0 +1,100 @@
+Flex 2 - Dirección de los ejes
+
+Etiqueta: style
+        code {
+            background-color: yellow;
+            font-weight: bold;
+        }  
+        /*containerh: Es el elemento padre que tendrá en su interior cada uno de los ítems flexibles. */
+        .flex-containerh {
+            display: inline-flex;   /* Esta propiedad define al div como contenedor flex*/
+            flex-direction: row-reverse;
+            /* probar row-reverse */
+            background-color: yellowgreen;
+        }
+
+        /*Cada uno de los hijos flexibles que tendrá el contenedor horizontal en su interior. */
+        .flex-containerh > div {  /*Utilizamos selectores avanzados en lugar de clases */
+            color: white;
+            background-color: green;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+        }
+
+        /*containerv: Es el elemento padre que tendrá en su interior cada uno de los ítems flexibles. */
+        .flex-containerv {
+            display: inline-flex;   /* Esta propiedad define al div como contenedor flex*/
+            flex-direction: column-reverse;
+            /* probar con column-reverse*/
+            background-color: orangered;
+        }
+
+        /*Cada uno de los hijos flexibles que tendrá el contenedor vertical en su interior. */
+        .flex-containerv > div {  /*Utilizamos selectores avanzados en lugar de clases */
+            color: white;
+            background-color: orange;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+        }
+
+
+        .flex-reverseh {
+            display: flex;   /* flex, 100% del espacio disponible*/
+            flex-direction: row-reverse;
+            background-color: yellowgreen;
+        }
+
+        /*Cada uno de los hijos flexibles que tendrá el contenedor horizontal en su interior. */
+        .flex-reverseh > div {  /*Utilizamos selectores avanzados en lugar de clases */
+            color: white;
+            background-color: green;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+        }        
+
+.
+Etiqueta: h3 Texto: Flexbox | Dirección de los ejes
+
+Etiqueta: p Texto: Existen dos propiedades principales para manipular la dirección y comportamiento de los ítems a lo largo del eje principal del contenedor.
+   
+Etiqueta: p Texto: Una es <code>flex-direction</code>. Podemos modificar la dirección del eje principal del contenedor para que se oriente en horizontal (por defecto) o en vertical. 
+Etiqueta: h4 Texto: Horizontal:
+Etiqueta: div class="flex-containerh"
+Etiqueta: div Texto: Item1
+Etiqueta: div Texto: Item2
+Etiqueta: div Texto: Item3
+Cierre div 
+
+Etiqueta: h4 Texto: Vertical:
+Etiqueta: div class="flex-containerv"
+Etiqueta: div Texto: Item1
+Etiqueta: div Texto: Item2
+Etiqueta: div Texto: Item3
+Cierre div 
+
+Etiqueta: h4 Texto: Horizontal con row-reverse:
+Etiqueta: p Texto: Además, también podemos incluir el sufijo <code>-reverse</code> para indicar que coloque los ítems en orden inverso. 
+   
+Etiqueta: div class="flex-reverseh"
+Etiqueta: div Texto: Item1
+Etiqueta: div Texto: Item2
+Etiqueta: div Texto: Item3
+Cierre div
+
+     
+
+Etiqueta: p Texto: <code>flex-wrap: wrap;</code> y <code>flex-wrap: wrap-reverse;</code> permiten el "desbordamiento" hacia la linea (o columna) siguiente. En la práctica, gracias a esto podemos tener tener contenedores multilinea / multicolumna. El valor por defecto es <code>flex-wrap: nowrap;</code>
+  
+Etiqueta: div class="flex-containerh" style="flex-wrap: wrap-reverse;"
+Etiqueta: div Texto: Item1
+Etiqueta: div Texto: Item2
+Etiqueta: div Texto: Item3
+Etiqueta: div Texto: Item4
+Etiqueta: div Texto: Item5
+Etiqueta: div Texto: Item6
+Cierre div
+
+Etiqueta: p>Esto nos permite tener un control muy alto sobre el orden de los elementos en una página.
